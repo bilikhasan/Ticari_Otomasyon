@@ -34,7 +34,7 @@ namespace Ticari_Otomasyon
         FrmUrunler fr;
         private void BtnUrunler_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            if (fr == null|| fr.IsDisposed)
+            if (fr == null || fr.IsDisposed)
             {
                 fr = new FrmUrunler();
                 fr.MdiParent = this;
@@ -44,11 +44,22 @@ namespace Ticari_Otomasyon
         FrmMusteriler fr2;
         private void BtnMusteriler_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            if(fr2==null || fr2.IsDisposed)
+            if (fr2 == null || fr2.IsDisposed)
             {
                 fr2 = new FrmMusteriler();
                 fr2.MdiParent = this;
                 fr2.Show();
+            }
+        }
+
+        FrmFirmalar fr3;
+        private void BtnFirmalar_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if(fr3 ==null || fr3.IsDisposed)
+            {
+                fr3 = new FrmFirmalar();
+                fr3.MdiParent = this;
+                fr3.Show();
             }
         }
     }
