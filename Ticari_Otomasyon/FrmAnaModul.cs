@@ -55,11 +55,22 @@ namespace Ticari_Otomasyon
         FrmFirmalar fr3;
         private void BtnFirmalar_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            if(fr3 ==null || fr3.IsDisposed)
+            if (fr3 == null || fr3.IsDisposed)
             {
                 fr3 = new FrmFirmalar();
                 fr3.MdiParent = this;
                 fr3.Show();
+            }
+        }
+
+        FrmPersonel fr4;
+        private void BtnPersoneller_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if (fr4 == null || fr4.IsDisposed)
+            {
+                fr4 = new FrmPersonel();
+                fr4.MdiParent = this;
+                fr4.Show();
             }
         }
     }
