@@ -51,8 +51,6 @@
             this.Txtid = new DevExpress.XtraEditors.TextEdit();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.xtraTabControl1 = new DevExpress.XtraTab.XtraTabControl();
-            this.xtraTabPage2 = new DevExpress.XtraTab.XtraTabPage();
-            this.groupControl5 = new DevExpress.XtraEditors.GroupControl();
             this.xtraTabPage1 = new DevExpress.XtraTab.XtraTabPage();
             this.groupControl4 = new DevExpress.XtraEditors.GroupControl();
             this.labelControl18 = new DevExpress.XtraEditors.LabelControl();
@@ -71,6 +69,9 @@
             this.TxtYetkiliGorev = new DevExpress.XtraEditors.TextEdit();
             this.labelControl14 = new DevExpress.XtraEditors.LabelControl();
             this.groupControl2 = new DevExpress.XtraEditors.GroupControl();
+            this.xtraTabPage2 = new DevExpress.XtraTab.XtraTabPage();
+            this.groupControl5 = new DevExpress.XtraEditors.GroupControl();
+            this.BtnTemizle = new DevExpress.XtraEditors.SimpleButton();
             this.xtraTabPage3 = new DevExpress.XtraTab.XtraTabPage();
             this.groupControl7 = new DevExpress.XtraEditors.GroupControl();
             this.xtraTabControl2 = new DevExpress.XtraTab.XtraTabControl();
@@ -87,7 +88,6 @@
             this.TxtKod2 = new DevExpress.XtraEditors.TextEdit();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.TxtKod1 = new DevExpress.XtraEditors.TextEdit();
-            this.BtnTemizle = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Cmbilce.Properties)).BeginInit();
@@ -99,9 +99,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.Txtid.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).BeginInit();
             this.xtraTabControl1.SuspendLayout();
-            this.xtraTabPage2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.groupControl5)).BeginInit();
-            this.groupControl5.SuspendLayout();
             this.xtraTabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl4)).BeginInit();
             this.groupControl4.SuspendLayout();
@@ -111,6 +108,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.TxtYetkiliGorev.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).BeginInit();
             this.groupControl2.SuspendLayout();
+            this.xtraTabPage2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl5)).BeginInit();
+            this.groupControl5.SuspendLayout();
             this.xtraTabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl7)).BeginInit();
             this.groupControl7.SuspendLayout();
@@ -128,6 +128,10 @@
             // 
             // gridView1
             // 
+            this.gridView1.Appearance.Row.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.gridView1.Appearance.Row.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.gridView1.Appearance.Row.Options.UseBackColor = true;
+            this.gridView1.Appearance.Row.Options.UseBorderColor = true;
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
             this.gridView1.OptionsView.ShowGroupPanel = false;
@@ -348,34 +352,6 @@
             this.xtraTabPage2,
             this.xtraTabPage3});
             // 
-            // xtraTabPage2
-            // 
-            this.xtraTabPage2.Controls.Add(this.groupControl5);
-            this.xtraTabPage2.Name = "xtraTabPage2";
-            this.xtraTabPage2.Size = new System.Drawing.Size(358, 590);
-            this.xtraTabPage2.Text = "Adres Bilgileri";
-            // 
-            // groupControl5
-            // 
-            this.groupControl5.Controls.Add(this.BtnTemizle);
-            this.groupControl5.Controls.Add(this.BtnGuncelle);
-            this.groupControl5.Controls.Add(this.BtnSil);
-            this.groupControl5.Controls.Add(this.Cmbilce);
-            this.groupControl5.Controls.Add(this.BtnKaydet);
-            this.groupControl5.Controls.Add(this.Cmbil);
-            this.groupControl5.Controls.Add(this.labelControl8);
-            this.groupControl5.Controls.Add(this.labelControl11);
-            this.groupControl5.Controls.Add(this.labelControl5);
-            this.groupControl5.Controls.Add(this.labelControl10);
-            this.groupControl5.Controls.Add(this.TxtVergi);
-            this.groupControl5.Controls.Add(this.RchAdres);
-            this.groupControl5.Location = new System.Drawing.Point(3, 14);
-            this.groupControl5.Name = "groupControl5";
-            this.groupControl5.ShowCaption = false;
-            this.groupControl5.Size = new System.Drawing.Size(352, 537);
-            this.groupControl5.TabIndex = 0;
-            this.groupControl5.Text = "groupControl5";
-            // 
             // xtraTabPage1
             // 
             this.xtraTabPage1.Controls.Add(this.groupControl4);
@@ -568,6 +544,46 @@
             this.groupControl2.TabIndex = 0;
             this.groupControl2.Text = "groupControl2";
             // 
+            // xtraTabPage2
+            // 
+            this.xtraTabPage2.Controls.Add(this.groupControl5);
+            this.xtraTabPage2.Name = "xtraTabPage2";
+            this.xtraTabPage2.Size = new System.Drawing.Size(358, 590);
+            this.xtraTabPage2.Text = "Adres Bilgileri";
+            // 
+            // groupControl5
+            // 
+            this.groupControl5.Controls.Add(this.BtnTemizle);
+            this.groupControl5.Controls.Add(this.BtnGuncelle);
+            this.groupControl5.Controls.Add(this.BtnSil);
+            this.groupControl5.Controls.Add(this.Cmbilce);
+            this.groupControl5.Controls.Add(this.BtnKaydet);
+            this.groupControl5.Controls.Add(this.Cmbil);
+            this.groupControl5.Controls.Add(this.labelControl8);
+            this.groupControl5.Controls.Add(this.labelControl11);
+            this.groupControl5.Controls.Add(this.labelControl5);
+            this.groupControl5.Controls.Add(this.labelControl10);
+            this.groupControl5.Controls.Add(this.TxtVergi);
+            this.groupControl5.Controls.Add(this.RchAdres);
+            this.groupControl5.Location = new System.Drawing.Point(3, 14);
+            this.groupControl5.Name = "groupControl5";
+            this.groupControl5.ShowCaption = false;
+            this.groupControl5.Size = new System.Drawing.Size(352, 537);
+            this.groupControl5.TabIndex = 0;
+            this.groupControl5.Text = "groupControl5";
+            // 
+            // BtnTemizle
+            // 
+            this.BtnTemizle.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.BtnTemizle.Appearance.Options.UseFont = true;
+            this.BtnTemizle.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnTemizle.ImageOptions.Image")));
+            this.BtnTemizle.Location = new System.Drawing.Point(96, 385);
+            this.BtnTemizle.Name = "BtnTemizle";
+            this.BtnTemizle.Size = new System.Drawing.Size(216, 32);
+            this.BtnTemizle.TabIndex = 32;
+            this.BtnTemizle.Text = "Temizle";
+            this.BtnTemizle.Click += new System.EventHandler(this.BtnTemizle_Click);
+            // 
             // xtraTabPage3
             // 
             this.xtraTabPage3.Controls.Add(this.groupControl7);
@@ -718,18 +734,6 @@
             this.TxtKod1.Size = new System.Drawing.Size(216, 28);
             this.TxtKod1.TabIndex = 27;
             // 
-            // BtnTemizle
-            // 
-            this.BtnTemizle.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.BtnTemizle.Appearance.Options.UseFont = true;
-            this.BtnTemizle.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
-            this.BtnTemizle.Location = new System.Drawing.Point(96, 385);
-            this.BtnTemizle.Name = "BtnTemizle";
-            this.BtnTemizle.Size = new System.Drawing.Size(216, 32);
-            this.BtnTemizle.TabIndex = 32;
-            this.BtnTemizle.Text = "Temizle";
-            this.BtnTemizle.Click += new System.EventHandler(this.BtnTemizle_Click);
-            // 
             // FrmFirmalar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -751,10 +755,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.Txtid.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).EndInit();
             this.xtraTabControl1.ResumeLayout(false);
-            this.xtraTabPage2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.groupControl5)).EndInit();
-            this.groupControl5.ResumeLayout(false);
-            this.groupControl5.PerformLayout();
             this.xtraTabPage1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl4)).EndInit();
             this.groupControl4.ResumeLayout(false);
@@ -767,6 +767,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).EndInit();
             this.groupControl2.ResumeLayout(false);
             this.groupControl2.PerformLayout();
+            this.xtraTabPage2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl5)).EndInit();
+            this.groupControl5.ResumeLayout(false);
+            this.groupControl5.PerformLayout();
             this.xtraTabPage3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl7)).EndInit();
             this.groupControl7.ResumeLayout(false);
