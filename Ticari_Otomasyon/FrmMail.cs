@@ -30,7 +30,7 @@ namespace Ticari_Otomasyon
         {
             MailMessage mesajim = new MailMessage();
             SmtpClient istemci = new SmtpClient();
-            istemci.Credentials = new System.Net.NetworkCredential("fatherlyy@hotmail.com", "fenerli190772346472-");
+            istemci.Credentials = new System.Net.NetworkCredential("mailadresiniz", "sifreniz");
             istemci.Port = 587;
             istemci.Host = "smtp.live.com";
             istemci.EnableSsl = true;
