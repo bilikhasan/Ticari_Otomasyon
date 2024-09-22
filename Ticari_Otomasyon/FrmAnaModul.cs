@@ -22,10 +22,6 @@ namespace Ticari_Otomasyon
 
         }
 
-        private void barButtonItem12_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
-        {
-
-        }
 
         private void ribbonControl1_Click_1(object sender, EventArgs e)
         {
@@ -91,6 +87,16 @@ namespace Ticari_Otomasyon
                 fr6 = new FrmGiderler();
                 fr6.MdiParent = this;
                 fr6.Show();
+            }
+        }
+        FrmBankalar fr7;
+        private void BtnBankalar_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if (fr7 ==null || fr7.IsDisposed)
+            {
+                fr7 = new FrmBankalar();
+                fr7.MdiParent = this;
+                fr7.Show();
             }
         }
     }
