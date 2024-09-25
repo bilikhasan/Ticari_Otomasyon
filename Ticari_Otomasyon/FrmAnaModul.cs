@@ -99,5 +99,15 @@ namespace Ticari_Otomasyon
                 fr7.Show();
             }
         }
+        FrmFaturalar fr8;
+        private void BtnFaturalar_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if(fr8==null || fr8.IsDisposed)
+            {
+                fr8 = new FrmFaturalar();
+                fr8.MdiParent = this;
+                fr8.Show();
+            }
+        }
     }
 }

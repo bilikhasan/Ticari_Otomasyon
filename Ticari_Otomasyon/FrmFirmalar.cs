@@ -189,5 +189,10 @@ namespace Ticari_Otomasyon
         {
             temizle();
         }
+
+        private void groupControl2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
