@@ -29,6 +29,21 @@ namespace Ticari_Otomasyon
             gridControl1.DataSource = dt;
         }
 
+        void temizle()
+        {
+            TxtAd.Text = "";
+            Txtid.Text = "";
+            TxtMail.Text = "";
+            TxtSoyad.Text = "";
+            TxtVergi.Text = "";
+            MskTC.Text = "";
+            MskTelefon1.Text = "";
+            MskTelefon2.Text = "";
+            Cmbil.Text = "";
+            Cmbilce.Text = "";
+            RchAdres.Text = "";
+        }
+
         void sehirlistesi()
         {
             SqlCommand komut = new SqlCommand("select SEHIR from TBL_ILLER", bgl.baglanti());
@@ -59,7 +74,10 @@ namespace Ticari_Otomasyon
         private void FrmMusteriler_Load(object sender, EventArgs e)
         {
             listele();
+
             sehirlistesi();
+
+            temizle();
         }
 
         private void Cmbil_SelectedIndexChanged(object sender, EventArgs e)
@@ -94,6 +112,7 @@ namespace Ticari_Otomasyon
             bgl.baglanti().Close();
             MessageBox.Show("Müşteri Sisteme Eklendi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
             listele();
+            temizle();
 
         }
 
