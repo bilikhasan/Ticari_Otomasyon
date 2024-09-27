@@ -120,7 +120,7 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.lookUpEdit1.Properties.NullText = "Bir Firma Seçin";
             this.lookUpEdit1.Size = new System.Drawing.Size(216, 28);
-            this.lookUpEdit1.TabIndex = 38;
+            this.lookUpEdit1.TabIndex = 11;
             // 
             // BtnTemizle
             // 
@@ -152,7 +152,7 @@
             this.TxtHesapTuru.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.TxtHesapTuru.Properties.Appearance.Options.UseFont = true;
             this.TxtHesapTuru.Size = new System.Drawing.Size(216, 28);
-            this.TxtHesapTuru.TabIndex = 35;
+            this.TxtHesapTuru.TabIndex = 10;
             // 
             // labelControl13
             // 
@@ -183,7 +183,7 @@
             this.Cmbilce.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.Cmbilce.Size = new System.Drawing.Size(216, 28);
-            this.Cmbilce.TabIndex = 31;
+            this.Cmbilce.TabIndex = 3;
             // 
             // MskTarih
             // 
@@ -192,7 +192,7 @@
             this.MskTarih.Mask = "00/00/0000";
             this.MskTarih.Name = "MskTarih";
             this.MskTarih.Size = new System.Drawing.Size(216, 29);
-            this.MskTarih.TabIndex = 29;
+            this.MskTarih.TabIndex = 9;
             this.MskTarih.ValidatingType = typeof(System.DateTime);
             // 
             // labelControl7
@@ -214,7 +214,7 @@
             this.Cmbil.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.Cmbil.Size = new System.Drawing.Size(216, 28);
-            this.Cmbil.TabIndex = 30;
+            this.Cmbil.TabIndex = 2;
             this.Cmbil.SelectedIndexChanged += new System.EventHandler(this.Cmbil_SelectedIndexChanged);
             // 
             // MskTelefon
@@ -224,7 +224,7 @@
             this.MskTelefon.Mask = "(999) 000-0000";
             this.MskTelefon.Name = "MskTelefon";
             this.MskTelefon.Size = new System.Drawing.Size(216, 29);
-            this.MskTelefon.TabIndex = 4;
+            this.MskTelefon.TabIndex = 8;
             // 
             // labelControl6
             // 
@@ -262,7 +262,7 @@
             this.TxtIBAN.Location = new System.Drawing.Point(126, 213);
             this.TxtIBAN.Name = "TxtIBAN";
             this.TxtIBAN.Size = new System.Drawing.Size(216, 29);
-            this.TxtIBAN.TabIndex = 28;
+            this.TxtIBAN.TabIndex = 5;
             // 
             // BtnGuncelle
             // 
@@ -317,7 +317,7 @@
             this.TxtYetkili.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.TxtYetkili.Properties.Appearance.Options.UseFont = true;
             this.TxtYetkili.Size = new System.Drawing.Size(216, 28);
-            this.TxtYetkili.TabIndex = 18;
+            this.TxtYetkili.TabIndex = 7;
             // 
             // labelControl8
             // 
@@ -336,7 +336,7 @@
             this.TxtSube.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.TxtSube.Properties.Appearance.Options.UseFont = true;
             this.TxtSube.Size = new System.Drawing.Size(216, 28);
-            this.TxtSube.TabIndex = 16;
+            this.TxtSube.TabIndex = 4;
             // 
             // labelControl9
             // 
@@ -364,7 +364,7 @@
             this.TxtBankaAd.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.TxtBankaAd.Properties.Appearance.Options.UseFont = true;
             this.TxtBankaAd.Size = new System.Drawing.Size(216, 28);
-            this.TxtBankaAd.TabIndex = 3;
+            this.TxtBankaAd.TabIndex = 1;
             // 
             // labelControl2
             // 
@@ -383,7 +383,7 @@
             this.Txtid.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Txtid.Properties.Appearance.Options.UseFont = true;
             this.Txtid.Size = new System.Drawing.Size(216, 28);
-            this.Txtid.TabIndex = 1;
+            this.Txtid.TabIndex = 100;
             // 
             // labelControl1
             // 
@@ -422,6 +422,7 @@
             // 
             // FrmBankalar
             // 
+            this.AcceptButton = this.BtnKaydet;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1981, 853);

@@ -99,7 +99,7 @@
             this.Cmbilce.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.Cmbilce.Size = new System.Drawing.Size(216, 28);
-            this.Cmbilce.TabIndex = 31;
+            this.Cmbilce.TabIndex = 7;
             // 
             // Cmbil
             // 
@@ -110,7 +110,7 @@
             this.Cmbil.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.Cmbil.Size = new System.Drawing.Size(216, 28);
-            this.Cmbil.TabIndex = 30;
+            this.Cmbil.TabIndex = 6;
             this.Cmbil.SelectedIndexChanged += new System.EventHandler(this.Cmbil_SelectedIndexChanged);
             // 
             // MskTC
@@ -120,7 +120,7 @@
             this.MskTC.Mask = "00000000000";
             this.MskTC.Name = "MskTC";
             this.MskTC.Size = new System.Drawing.Size(216, 29);
-            this.MskTC.TabIndex = 29;
+            this.MskTC.TabIndex = 4;
             this.MskTC.ValidatingType = typeof(int);
             // 
             // MskTelefon1
@@ -130,7 +130,7 @@
             this.MskTelefon1.Mask = "(999) 000-0000";
             this.MskTelefon1.Name = "MskTelefon1";
             this.MskTelefon1.Size = new System.Drawing.Size(216, 29);
-            this.MskTelefon1.TabIndex = 28;
+            this.MskTelefon1.TabIndex = 3;
             // 
             // labelControl11
             // 
@@ -237,7 +237,7 @@
             this.RchAdres.Location = new System.Drawing.Point(126, 351);
             this.RchAdres.Name = "RchAdres";
             this.RchAdres.Size = new System.Drawing.Size(216, 97);
-            this.RchAdres.TabIndex = 21;
+            this.RchAdres.TabIndex = 9;
             this.RchAdres.Text = "";
             // 
             // labelControl5
@@ -257,7 +257,7 @@
             this.TxtGorev.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.TxtGorev.Properties.Appearance.Options.UseFont = true;
             this.TxtGorev.Size = new System.Drawing.Size(216, 28);
-            this.TxtGorev.TabIndex = 18;
+            this.TxtGorev.TabIndex = 8;
             // 
             // labelControl8
             // 
@@ -276,7 +276,7 @@
             this.TxtMail.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.TxtMail.Properties.Appearance.Options.UseFont = true;
             this.TxtMail.Size = new System.Drawing.Size(216, 28);
-            this.TxtMail.TabIndex = 16;
+            this.TxtMail.TabIndex = 5;
             // 
             // labelControl9
             // 
@@ -315,7 +315,7 @@
             this.TxtSoyad.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.TxtSoyad.Properties.Appearance.Options.UseFont = true;
             this.TxtSoyad.Size = new System.Drawing.Size(216, 28);
-            this.TxtSoyad.TabIndex = 6;
+            this.TxtSoyad.TabIndex = 2;
             // 
             // labelControl4
             // 
@@ -334,7 +334,7 @@
             this.TxtAd.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.TxtAd.Properties.Appearance.Options.UseFont = true;
             this.TxtAd.Size = new System.Drawing.Size(216, 28);
-            this.TxtAd.TabIndex = 3;
+            this.TxtAd.TabIndex = 1;
             // 
             // labelControl2
             // 
@@ -353,7 +353,7 @@
             this.Txtid.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Txtid.Properties.Appearance.Options.UseFont = true;
             this.Txtid.Size = new System.Drawing.Size(216, 28);
-            this.Txtid.TabIndex = 1;
+            this.Txtid.TabIndex = 100;
             // 
             // labelControl1
             // 
