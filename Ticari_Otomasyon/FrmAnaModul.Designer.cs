@@ -58,7 +58,7 @@
             // 
             // ribbonControl1
             // 
-            this.ribbonControl1.EmptyAreaImageOptions.ImagePadding = new System.Windows.Forms.Padding(46);
+            this.ribbonControl1.EmptyAreaImageOptions.ImagePadding = new System.Windows.Forms.Padding(71);
             this.ribbonControl1.ExpandCollapseItem.Id = 0;
             this.ribbonControl1.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
             this.ribbonControl1.ExpandCollapseItem,
@@ -81,10 +81,10 @@
             this.Btn_Hareketler,
             this.Btn_Raporlar});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl1.Margin = new System.Windows.Forms.Padding(5);
+            this.ribbonControl1.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
             this.ribbonControl1.MaxItemId = 19;
             this.ribbonControl1.Name = "ribbonControl1";
-            this.ribbonControl1.OptionsMenuMinWidth = 515;
+            this.ribbonControl1.OptionsMenuMinWidth = 805;
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage1});
             this.ribbonControl1.Size = new System.Drawing.Size(1482, 183);
@@ -125,6 +125,7 @@
             this.BtnStoklar.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.BtnStoklar.ItemAppearance.Normal.Options.UseFont = true;
             this.BtnStoklar.Name = "BtnStoklar";
+            this.BtnStoklar.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnStoklar_ItemClick);
             // 
             // BtnMusteriler
             // 
@@ -257,6 +258,7 @@
             this.Btn_Raporlar.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Btn_Raporlar.ItemAppearance.Normal.Options.UseFont = true;
             this.Btn_Raporlar.Name = "Btn_Raporlar";
+            this.Btn_Raporlar.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.Btn_Raporlar_ItemClick);
             // 
             // ribbonPage1
             // 

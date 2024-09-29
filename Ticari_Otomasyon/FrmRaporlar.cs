@@ -8,7 +8,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-
 namespace Ticari_Otomasyon
 {
     public partial class FrmRaporlar : Form
@@ -16,10 +15,6 @@ namespace Ticari_Otomasyon
         public FrmRaporlar()
         {
             InitializeComponent();
-        }
-        private void FrmRaporlar_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }
