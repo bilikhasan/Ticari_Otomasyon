@@ -92,7 +92,7 @@ namespace Ticari_Otomasyon
         FrmBankalar fr7;
         private void BtnBankalar_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            if (fr7 ==null || fr7.IsDisposed)
+            if (fr7 == null || fr7.IsDisposed)
             {
                 fr7 = new FrmBankalar();
                 fr7.MdiParent = this;
@@ -102,7 +102,7 @@ namespace Ticari_Otomasyon
         FrmFaturalar fr8;
         private void BtnFaturalar_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            if(fr8==null || fr8.IsDisposed)
+            if (fr8 == null || fr8.IsDisposed)
             {
                 fr8 = new FrmFaturalar();
                 fr8.MdiParent = this;
@@ -112,7 +112,7 @@ namespace Ticari_Otomasyon
         FrmNotlar fr9;
         private void BtnNotlar_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            if(fr9 ==null || fr9.IsDisposed)
+            if (fr9 == null || fr9.IsDisposed)
             {
                 fr9 = new FrmNotlar();
                 fr9.MdiParent = this;
@@ -123,9 +123,9 @@ namespace Ticari_Otomasyon
         FrmHareketler fr10;
         private void Btn_Hareketler_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            if(fr10== null || fr10.IsDisposed)
+            if (fr10 == null || fr10.IsDisposed)
             {
-                fr10= new FrmHareketler();
+                fr10 = new FrmHareketler();
                 fr10.MdiParent = this;
                 fr10.Show();
             }
@@ -148,6 +148,15 @@ namespace Ticari_Otomasyon
                 fr12 = new FrmStoklar();
                 fr12.MdiParent = this;
                 fr12.Show();
+            }
+        }
+        FrmAyarlar fr13;
+        private void BtnAyarlar_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if (fr13 == null || fr13.IsDisposed)
+            {
+                fr13 = new FrmAyarlar();
+                fr13.Show();
             }
         }
     }
