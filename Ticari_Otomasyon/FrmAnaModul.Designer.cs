@@ -81,7 +81,7 @@
             this.Btn_Hareketler,
             this.Btn_Raporlar});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl1.Margin = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.ribbonControl1.Margin = new System.Windows.Forms.Padding(10);
             this.ribbonControl1.MaxItemId = 19;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.OptionsMenuMinWidth = 1006;
@@ -184,6 +184,7 @@
             this.BtnKasa.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.BtnKasa.ItemAppearance.Normal.Options.UseFont = true;
             this.BtnKasa.Name = "BtnKasa";
+            this.BtnKasa.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnKasa_ItemClick);
             // 
             // BtnNotlar
             // 
