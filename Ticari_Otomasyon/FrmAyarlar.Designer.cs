@@ -38,10 +38,8 @@
             this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
             this.Btnislem = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // gridControl1
@@ -51,7 +49,7 @@
             this.gridControl1.MainView = this.gridView1;
             this.gridControl1.Margin = new System.Windows.Forms.Padding(4);
             this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(658, 118);
+            this.gridControl1.Size = new System.Drawing.Size(503, 140);
             this.gridControl1.TabIndex = 0;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -61,6 +59,7 @@
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
             this.gridView1.OptionsView.ShowGroupPanel = false;
+            this.gridView1.FocusedRowChanged += new DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventHandler(this.gridView1_FocusedRowChanged);
             // 
             // label1
             // 
@@ -89,15 +88,16 @@
             this.TxtKullaniciAd.Font = new System.Drawing.Font("Georgia", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.TxtKullaniciAd.Location = new System.Drawing.Point(28, 180);
             this.TxtKullaniciAd.Name = "TxtKullaniciAd";
-            this.TxtKullaniciAd.Size = new System.Drawing.Size(223, 34);
+            this.TxtKullaniciAd.Size = new System.Drawing.Size(260, 34);
             this.TxtKullaniciAd.TabIndex = 3;
+            this.TxtKullaniciAd.TextChanged += new System.EventHandler(this.TxtKullaniciAd_TextChanged);
             // 
             // TxtSifre
             // 
             this.TxtSifre.Font = new System.Drawing.Font("Georgia", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.TxtSifre.Location = new System.Drawing.Point(28, 265);
             this.TxtSifre.Name = "TxtSifre";
-            this.TxtSifre.Size = new System.Drawing.Size(223, 34);
+            this.TxtSifre.Size = new System.Drawing.Size(260, 34);
             this.TxtSifre.TabIndex = 4;
             // 
             // simpleButton2
@@ -124,21 +124,11 @@
             this.Btnislem.Font = new System.Drawing.Font("Georgia", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Btnislem.Location = new System.Drawing.Point(28, 318);
             this.Btnislem.Name = "Btnislem";
-            this.Btnislem.Size = new System.Drawing.Size(223, 40);
+            this.Btnislem.Size = new System.Drawing.Size(260, 40);
             this.Btnislem.TabIndex = 8;
             this.Btnislem.Text = "KAYDET";
             this.Btnislem.UseVisualStyleBackColor = false;
             this.Btnislem.Click += new System.EventHandler(this.Btnislem_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(410, 180);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(182, 149);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 9;
-            this.pictureBox1.TabStop = false;
             // 
             // FrmAyarlar
             // 
@@ -146,8 +136,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.CadetBlue;
-            this.ClientSize = new System.Drawing.Size(659, 385);
-            this.Controls.Add(this.pictureBox1);
+            this.ClientSize = new System.Drawing.Size(505, 385);
             this.Controls.Add(this.Btnislem);
             this.Controls.Add(this.simpleButton3);
             this.Controls.Add(this.simpleButton2);
@@ -162,7 +151,6 @@
             this.Load += new System.EventHandler(this.FrmAyarlar_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -179,6 +167,5 @@
         private DevExpress.XtraEditors.SimpleButton simpleButton2;
         private DevExpress.XtraEditors.SimpleButton simpleButton3;
         private System.Windows.Forms.Button Btnislem;
-        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
