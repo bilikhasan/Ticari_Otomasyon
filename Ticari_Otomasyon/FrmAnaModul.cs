@@ -166,9 +166,15 @@ namespace Ticari_Otomasyon
             if(fr14 ==null|| fr14.IsDisposed)
             {
                 fr14 = new FrmKasa();
+                fr14.ad = kullanici;
                 fr14.MdiParent = this;
                 fr14.Show();
             }
+        }
+        public string kullanici;
+        private void FrmAnaModul_Load(object sender, EventArgs e)
+        {
+            
         }
     }
 }
