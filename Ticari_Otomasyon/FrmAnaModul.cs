@@ -17,16 +17,18 @@ namespace Ticari_Otomasyon
             InitializeComponent();
         }
 
-        private void ribbonControl1_Click(object sender, EventArgs e)
+        FrmAnaSayfa fr15;
+        private void BtnAnasayfa_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-
+            if(fr15==null || fr15.IsDisposed)
+            {
+                fr15 = new FrmAnaSayfa();
+                fr15.MdiParent = this;
+                fr15.Show();
+            }
         }
 
 
-        private void ribbonControl1_Click_1(object sender, EventArgs e)
-        {
-
-        }
         FrmUrunler fr;
         private void BtnUrunler_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
@@ -174,7 +176,12 @@ namespace Ticari_Otomasyon
         public string kullanici;
         private void FrmAnaModul_Load(object sender, EventArgs e)
         {
-            
+            if (fr15 == null || fr15.IsDisposed)
+            {
+                fr15 = new FrmAnaSayfa();
+                fr15.MdiParent = this;
+                fr15.Show();
+            }
         }
     }
 }

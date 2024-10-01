@@ -58,7 +58,7 @@
             // 
             // ribbonControl1
             // 
-            this.ribbonControl1.EmptyAreaImageOptions.ImagePadding = new System.Windows.Forms.Padding(89);
+            this.ribbonControl1.EmptyAreaImageOptions.ImagePadding = new System.Windows.Forms.Padding(111);
             this.ribbonControl1.ExpandCollapseItem.Id = 0;
             this.ribbonControl1.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
             this.ribbonControl1.ExpandCollapseItem,
@@ -81,15 +81,15 @@
             this.Btn_Hareketler,
             this.Btn_Raporlar});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl1.Margin = new System.Windows.Forms.Padding(10);
+            this.ribbonControl1.Margin = new System.Windows.Forms.Padding(12, 12, 12, 12);
             this.ribbonControl1.MaxItemId = 19;
             this.ribbonControl1.Name = "ribbonControl1";
-            this.ribbonControl1.OptionsMenuMinWidth = 1006;
+            this.ribbonControl1.OptionsMenuMinWidth = 1257;
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage1});
             this.ribbonControl1.Size = new System.Drawing.Size(1482, 183);
             this.ribbonControl1.ToolbarLocation = DevExpress.XtraBars.Ribbon.RibbonQuickAccessToolbarLocation.Below;
-            this.ribbonControl1.Click += new System.EventHandler(this.ribbonControl1_Click_1);
+//            this.ribbonControl1.Click += new System.EventHandler(this.ribbonControl1_Click_1);
             // 
             // BtnUrunler
             // 
@@ -155,6 +155,7 @@
             this.BtnAnasayfa.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.BtnAnasayfa.ItemAppearance.Normal.Options.UseFont = true;
             this.BtnAnasayfa.Name = "BtnAnasayfa";
+            this.BtnAnasayfa.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnAnasayfa_ItemClick);
             // 
             // BtnPersoneller
             // 
