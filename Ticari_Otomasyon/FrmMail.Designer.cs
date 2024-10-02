@@ -56,7 +56,7 @@
             // TxtMailAdres
             // 
             this.TxtMailAdres.Location = new System.Drawing.Point(169, 202);
-            this.TxtMailAdres.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.TxtMailAdres.Margin = new System.Windows.Forms.Padding(6);
             this.TxtMailAdres.Name = "TxtMailAdres";
             this.TxtMailAdres.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.TxtMailAdres.Properties.Appearance.Options.UseFont = true;
@@ -66,7 +66,7 @@
             // TxtKonu
             // 
             this.TxtKonu.Location = new System.Drawing.Point(169, 244);
-            this.TxtKonu.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.TxtKonu.Margin = new System.Windows.Forms.Padding(6);
             this.TxtKonu.Name = "TxtKonu";
             this.TxtKonu.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.TxtKonu.Properties.Appearance.Options.UseFont = true;
@@ -129,7 +129,7 @@
             this.BtnGonder.Appearance.Options.UseFont = true;
             this.BtnGonder.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnGonder.ImageOptions.Image")));
             this.BtnGonder.Location = new System.Drawing.Point(230, 479);
-            this.BtnGonder.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.BtnGonder.Margin = new System.Windows.Forms.Padding(6);
             this.BtnGonder.Name = "BtnGonder";
             this.BtnGonder.Size = new System.Drawing.Size(156, 37);
             this.BtnGonder.TabIndex = 7;
@@ -140,6 +140,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 28F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(575, 651);
             this.Controls.Add(this.BtnGonder);
             this.Controls.Add(this.panel1);
@@ -151,9 +152,11 @@
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Margin = new System.Windows.Forms.Padding(5);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "FrmMail";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FrmMail";
+            this.Text = "MAIL";
             this.Load += new System.EventHandler(this.FrmMail_Load);
             ((System.ComponentModel.ISupportInitialize)(this.TxtMailAdres.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtKonu.Properties)).EndInit();
