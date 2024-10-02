@@ -8,7 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
-
+using DevExpress.XtraBars.Ribbon.BackstageView.Accessible;
+using System.Xml;
+using DevExpress.CodeParser;
 
 namespace Ticari_Otomasyon
 {
@@ -27,8 +29,6 @@ namespace Ticari_Otomasyon
             da.Fill(dt);
             GridControlStoklar.DataSource = dt;
         }
-
-
         void ajanda()
         {
             SqlDataAdapter da = new SqlDataAdapter("select top 10 tarıh,saat,baslık from tbl_notlar order by ıd desc", bgl.baglanti());
@@ -37,14 +37,47 @@ namespace Ticari_Otomasyon
             GridControlAjanda.DataSource = dt;
         }
 
+        void FirmaHareketleri()
+        {
+            SqlDataAdapter da = new SqlDataAdapter("execute FirmaHareket2", bgl.baglanti());
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            gridControlFirmaHareket.DataSource = dt;
+        }
 
+        void fihrist ()
+        {
+            SqlDataAdapter da = new SqlDataAdapter("select ad,telefon1 from tbl_Fırmalar", bgl.baglanti());
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            gridControlFihrist.DataSource = dt;
+        }
 
+        void haberler()
+        {
+            XmlTextReader xmloku = new XmlTextReader("https://www.hurriyet.com.tr/rss/anasayfa");
+            while (xmloku.Read())
+            {
+                if(xmloku.Name =="title")
+                {
+                    listBox1.Items.Add(xmloku.ReadString());
+                }
+            }
+        }
+       
         private void FrmAnaSayfa_Load(object sender, EventArgs e)
         {
             stoklar();
 
             ajanda();
-        }
 
+            FirmaHareketleri();
+
+            fihrist();
+
+            webBrowser1.Navigate("https://tcmb.gov.tr/kurlar/today.xml");
+
+            haberler();
+        }
     }
 }
