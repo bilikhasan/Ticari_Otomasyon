@@ -51,6 +51,8 @@
             this.labelControl13 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl14 = new DevExpress.XtraEditors.LabelControl();
             this.groupControl2 = new DevExpress.XtraEditors.GroupControl();
+            this.labelControl21 = new DevExpress.XtraEditors.LabelControl();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.TxtSiraNo = new DevExpress.XtraEditors.TextEdit();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.Txtid = new DevExpress.XtraEditors.TextEdit();
@@ -80,8 +82,6 @@
             this.labelControl11 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl10 = new DevExpress.XtraEditors.LabelControl();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.labelControl21 = new DevExpress.XtraEditors.LabelControl();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).BeginInit();
@@ -190,10 +190,10 @@
             this.BtnTemizle.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.BtnTemizle.Appearance.Options.UseFont = true;
             this.BtnTemizle.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnTemizle.ImageOptions.Image")));
-            this.BtnTemizle.Location = new System.Drawing.Point(118, 261);
+            this.BtnTemizle.Location = new System.Drawing.Point(171, 209);
             this.BtnTemizle.Margin = new System.Windows.Forms.Padding(11, 10, 11, 10);
             this.BtnTemizle.Name = "BtnTemizle";
-            this.BtnTemizle.Size = new System.Drawing.Size(201, 35);
+            this.BtnTemizle.Size = new System.Drawing.Size(179, 35);
             this.BtnTemizle.TabIndex = 41;
             this.BtnTemizle.Text = "Temizle";
             // 
@@ -202,10 +202,10 @@
             this.BtnGuncelle.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.BtnGuncelle.Appearance.Options.UseFont = true;
             this.BtnGuncelle.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnGuncelle.ImageOptions.Image")));
-            this.BtnGuncelle.Location = new System.Drawing.Point(118, 206);
+            this.BtnGuncelle.Location = new System.Drawing.Point(171, 261);
             this.BtnGuncelle.Margin = new System.Windows.Forms.Padding(11, 10, 11, 10);
             this.BtnGuncelle.Name = "BtnGuncelle";
-            this.BtnGuncelle.Size = new System.Drawing.Size(201, 35);
+            this.BtnGuncelle.Size = new System.Drawing.Size(179, 35);
             this.BtnGuncelle.TabIndex = 40;
             this.BtnGuncelle.Text = "Güncelle";
             this.BtnGuncelle.Click += new System.EventHandler(this.BtnGuncelle_Click);
@@ -215,10 +215,10 @@
             this.BtnSil.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.BtnSil.Appearance.Options.UseFont = true;
             this.BtnSil.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnSil.ImageOptions.Image")));
-            this.BtnSil.Location = new System.Drawing.Point(118, 151);
+            this.BtnSil.Location = new System.Drawing.Point(171, 154);
             this.BtnSil.Margin = new System.Windows.Forms.Padding(11, 10, 11, 10);
             this.BtnSil.Name = "BtnSil";
-            this.BtnSil.Size = new System.Drawing.Size(201, 35);
+            this.BtnSil.Size = new System.Drawing.Size(179, 35);
             this.BtnSil.TabIndex = 39;
             this.BtnSil.Text = "Sil";
             this.BtnSil.Click += new System.EventHandler(this.BtnSil_Click_1);
@@ -384,6 +384,29 @@
             this.groupControl2.Size = new System.Drawing.Size(375, 177);
             this.groupControl2.TabIndex = 0;
             this.groupControl2.Text = "groupControl2";
+            // 
+            // labelControl21
+            // 
+            this.labelControl21.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelControl21.Appearance.Options.UseFont = true;
+            this.labelControl21.Location = new System.Drawing.Point(42, 144);
+            this.labelControl21.Margin = new System.Windows.Forms.Padding(11, 10, 11, 10);
+            this.labelControl21.Name = "labelControl21";
+            this.labelControl21.Size = new System.Drawing.Size(79, 22);
+            this.labelControl21.TabIndex = 11;
+            this.labelControl21.Text = "Cari Türü:";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Müşteri",
+            "Firma"});
+            this.comboBox1.Location = new System.Drawing.Point(118, 146);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(201, 24);
+            this.comboBox1.TabIndex = 10;
             // 
             // TxtSiraNo
             // 
@@ -711,29 +734,6 @@
             this.labelControl10.Size = new System.Drawing.Size(54, 22);
             this.labelControl10.TabIndex = 26;
             this.labelControl10.Text = "Miktar:";
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "Müşteri",
-            "Firma"});
-            this.comboBox1.Location = new System.Drawing.Point(118, 146);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(201, 24);
-            this.comboBox1.TabIndex = 10;
-            // 
-            // labelControl21
-            // 
-            this.labelControl21.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelControl21.Appearance.Options.UseFont = true;
-            this.labelControl21.Location = new System.Drawing.Point(42, 144);
-            this.labelControl21.Margin = new System.Windows.Forms.Padding(11, 10, 11, 10);
-            this.labelControl21.Name = "labelControl21";
-            this.labelControl21.Size = new System.Drawing.Size(79, 22);
-            this.labelControl21.TabIndex = 11;
-            this.labelControl21.Text = "Cari Türü:";
             // 
             // FrmFaturalar
             // 

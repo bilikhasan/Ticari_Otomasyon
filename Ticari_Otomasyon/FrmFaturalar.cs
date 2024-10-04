@@ -44,25 +44,7 @@ namespace Ticari_Otomasyon
 
         private void BtnKaydet_Click(object sender, EventArgs e)
         {
-
             //Firma Carisi
-            if (TxtFaturaid.Text == "" && comboBox1.Text == "Firma")
-            {
-                SqlCommand komut = new SqlCommand("insert into TBL_FATURABILGI (SERI, SIRANO, TARIH, SAAT, VERGIDAIRE, ALICI, TESLIMEDEN, TESLIMALAN) VALUES (@P1,@P2,@P3,@P4,@P5,@P6,@P7,@P8)", bgl.baglanti());
-                komut.Parameters.AddWithValue("@P1", TxtSeri.Text);
-                komut.Parameters.AddWithValue("@P2", TxtSiraNo.Text);
-                komut.Parameters.AddWithValue("@P3", MskTarih.Text);
-                komut.Parameters.AddWithValue("@P4", MskSaat.Text);
-                komut.Parameters.AddWithValue("@P5", TxtVergiDairesi.Text);
-                komut.Parameters.AddWithValue("@P6", TxtAlici.Text);
-                komut.Parameters.AddWithValue("@P7", TxtTeslimEden.Text);
-                komut.Parameters.AddWithValue("@P8", TxtTeslimAlan.Text);
-                komut.ExecuteNonQuery();
-                bgl.baglanti().Close();
-                MessageBox.Show("Fatura Bilgisi Sisteme Kaydedildi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                listele();
-            }
-
             if (TxtFaturaid.Text != "")
             {
                 double miktar, tutar, fiyat;
@@ -104,26 +86,10 @@ namespace Ticari_Otomasyon
                 MessageBox.Show("Faturaya ait ürün kaydedildi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
 
+
+ 
             //Müşteri Carisi
-
-            if (TxtFaturaid.Text == "" && comboBox1.Text == "Müşteri")
-            {
-                SqlCommand komut = new SqlCommand("insert into TBL_FATURABILGI (SERI, SIRANO, TARIH, SAAT, VERGIDAIRE, ALICI, TESLIMEDEN, TESLIMALAN) VALUES (@P1,@P2,@P3,@P4,@P5,@P6,@P7,@P8)", bgl.baglanti());
-                komut.Parameters.AddWithValue("@P1", TxtSeri.Text);
-                komut.Parameters.AddWithValue("@P2", TxtSiraNo.Text);
-                komut.Parameters.AddWithValue("@P3", MskTarih.Text);
-                komut.Parameters.AddWithValue("@P4", MskSaat.Text);
-                komut.Parameters.AddWithValue("@P5", TxtVergiDairesi.Text);
-                komut.Parameters.AddWithValue("@P6", TxtAlici.Text);
-                komut.Parameters.AddWithValue("@P7", TxtTeslimEden.Text);
-                komut.Parameters.AddWithValue("@P8", TxtTeslimAlan.Text);
-                komut.ExecuteNonQuery();
-                bgl.baglanti().Close();
-                MessageBox.Show("Fatura Bilgisi Sisteme Kaydedildi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                listele();
-            }
-
-            if (TxtFaturaid.Text != "")
+            if (TxtFaturaid.Text != "" && comboBox1.Text=="Müşteri")
             {
                 double miktar, tutar, fiyat;
                 fiyat = Convert.ToDouble(TxtFiyat.Text);
@@ -142,7 +108,7 @@ namespace Ticari_Otomasyon
 
 
                 //Hareket tablosuna veri girişi
-                SqlCommand komut3 = new SqlCommand("insert into tbl_musterihareketler (urunıd,adet,personel,fırma,fıyat,toplam,faturaıd,tarıh) values (@h1, @h2, @h3, @h4, @h5, @h6, @h7, @h8)", bgl.baglanti());
+                SqlCommand komut3 = new SqlCommand("insert into tbl_musterıhareketler (urunıd,adet,personel,musterı,fıyat,toplam,faturaıd,tarıh) values (@h1, @h2, @h3, @h4, @h5, @h6, @h7, @h8)", bgl.baglanti());
                 komut3.Parameters.AddWithValue("@h1", TxtUrunid.Text);
                 komut3.Parameters.AddWithValue("@h2", TxtMiktar.Text);
                 komut3.Parameters.AddWithValue("@h3", TxtPersonel.Text);
@@ -163,10 +129,6 @@ namespace Ticari_Otomasyon
                 bgl.baglanti().Close();
                 MessageBox.Show("Faturaya ait ürün kaydedildi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
-
-
-
-
         }
 
         private void gridView1_FocusedRowChanged(object sender, DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventArgs e)
@@ -236,6 +198,11 @@ namespace Ticari_Otomasyon
                 TxtFiyat.Text = dr[1].ToString();
             }
             bgl.baglanti().Close();
+        }
+
+        private void simpleButton1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
